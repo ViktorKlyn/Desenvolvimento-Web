@@ -1,0 +1,35 @@
+/*Comentário em CSS Seletor de Elementos*/
+
+body {
+    background-color: yellow;
+}
+
+h1 {
+    color: navy;
+    size:0cap;
+    font-size:xx-large;
+}
+
+img {
+    height: 200px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#p1 {
+    background-color: green;
+}
+
+/*Seletor de Classe*/
+
+.estiloso {
+    border-style: solid;
+}
+
+/*Afeta apenas os p da classe centraliza*/
+p.centraliza{
+    text-align: center;
+}
