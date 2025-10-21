@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bg-dark text-white p-2 text-center">
+                <h1 class="display-1">Introdução ao JavaScript</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                        aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link active" href="#sec1">Hello World JS</a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Ação</a>
+                                    <a class="dropdown-item" href="#">Outra ação</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Algo mais aqui</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link disabled" href="#">Desativado</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
+                                aria-label="Pesquisar">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row p-3 mt-2">
+            <div class="col-md" id="sec1">
+                <h2>Hello World JavaScript</h2>
+                <p>Ao clicar no botão, você verá a data e hora atual!</p>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-outline-primary"
+                onclick="document.getElementById('datahora').innerHTML = Date()">
+                    Clique aqui para ver data e hora
+                </button>
+                <p id="datahora"></p>
+            </div>
+        </div>
+        <div class="row p-3 mt-3">
+            <div class="col-md">
+                <h3>Ações ao deslizar do mouse</h3>
+                <p>A ação na coluna ao lado é realizada por JavaScript externo
+                    Ao passar o mouse sobre a texto ele exibe outro texto.
+                    Ao retirar o mouse o texto desparece.
+                </p>
+            </div>
+            <div class="col-md">
+                <h4 onmouseover="exibir()" onmouseout="ocultar()">
+                    Deslize o mouse sobre esse texto!
+                </h4>
+                <p id="texto"></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="animacao">
+        <div class="row-10" style="text-align: center;">
+            <div class="col-md">
+                <h3 onmouseover="mudarcortexto()">
+                    Texto de exemplo para mudança de cor
+                </h3>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-outline-primary">
+                    Ao clicar aqui você muda a cor do botão e do texto acima!
+                </button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <script src="js/meuscript.js"></script>
+</body>
+
+</html>
